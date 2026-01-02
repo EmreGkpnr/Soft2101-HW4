@@ -5,6 +5,6 @@ This repository contains the assignments for Software Engineering class.
 Created by Emre.
 
 Link to Department:
-<ogrami/yazilim-muhendisligi)
+[Işık SE Department](https://www.isikun.edu.tr/akademik/muhendislik-fakultesi/bolumler-ve-programlar/bilgisayar-muhendisligi/programlar/lisans-programi/yazilim-muhendisligi)
 
 
