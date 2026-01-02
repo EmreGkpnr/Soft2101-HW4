@@ -21,9 +21,9 @@ public class RangePrinter {
 
         System.out.print("Numbers between: ");
         for (int i = min + 1; i < max; i++) {
-            if(i ½ 2 != 0){
-                System.out.print(i + " ");
-            }
+            if(i % 2 == 0){
+                System.out.print(i + " ")
+            }  
         }
         System.out.println();
     }
