@@ -1,0 +1,117 @@
+STEP A
+git config --list  
+
+STEP B
+HEAD  config  description  hooks/  info/  objects/  refs/ 
+
+STEP C
+[Işık SE Department](https://www.isikun.edu.tr/akademik/muhendislik-fakultesi/bolumler-ve-programlar/bilgisayar-muhendisligi/programlar/lisans-programi/yazilim-muhendisligi)
+
+STEP D
+*.class  
+
+.vscode/  
+
+.idea/  
+
+bin/  
+
+build/  
+
+*.iml 
+
+STEP F
+Commits on feature-1:
+
+e4f46a9 (HEAD -> feature-1) satisfying requirement one 
+
+a94998e (main) setting up gitignore 
+
+889aa72 Update README with department link 
+
+
+Files in hmk1 on feature-1:
+RangePrinter.java
+
+Files in hmk1 on main:
+The hmk1 directory does not exist on the main branch yet
+
+STEP J
+Commits on feature-2:
+
+6beb624 (HEAD -> feature-2) satisfying requirement change two 
+
+e4f46a9 (main, feature-3, feature-1) satisfying requirement one 
+
+a94998e setting up gitignore 
+
+889aa72 Update README with department link 
+
+
+STEP M
+Differences between branches:
+
+1. git diff main feature-1
+diff --git a/hmk1/RangePrinter.java b/hmk1/RangePrinter.java 
+
+index 687d165..6b33d69 100644 
+
+--- a/hmk1/RangePrinter.java 
+
++++ b/hmk1/RangePrinter.java 
+
+@@ -21,9 +21,7 @@ public class RangePrinter { 
+
+         System.out.print("Numbers between: "); 
+
+         for (int i = min + 1; i < max; i++) { 
+
+-            if(i % 2 == 0){ 
+
+-                System.out.print(i + " ") 
+
+-            } 
+
++            System.out.print(i + " "); 
+
+         } 
+
+         System.out.println(); 
+
+     } 
+
+2. git diff main feature-2
+diff --git a/hmk1/RangePrinter.java b/hmk1/RangePrinter.java 
+
+index 687d165..2750bb9 100644 
+
+--- a/hmk1/RangePrinter.java 
+
++++ b/hmk1/RangePrinter.java 
+
+@@ -21,9 +21,9 @@ public class RangePrinter { 
+
+         System.out.print("Numbers between: "); 
+
+         for (int i = min + 1; i < max; i++) { 
+
+-            if(i % 2 == 0){ 
+
+-                System.out.print(i + " ") 
+
+-            } 
+
++            if(i % 2 != 0){ 
+
++                System.out.print(i + " "); 
+
++            } 
+
+         } 
+
+         System.out.println(); 
+
+     } 
+
+3. git diff main feature-3
+No output - The branches are identical
